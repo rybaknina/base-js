@@ -4,7 +4,7 @@
 с помощью console.log) от 0 до 10 включительно
 * */
 const count = 10;
-for (let i = 0; i < count; i++) {
+for (let i = 0; i <= count; i++) {
     if (i === 0) {
         console.log(`${i} - это ноль`);
         continue;
