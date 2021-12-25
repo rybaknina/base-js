@@ -20,7 +20,7 @@ const products = [
 ];
 
 function discount(product) {
-    product.price += (product.price * 0.15);
+    product.price -= (product.price * 0.15);
 }
 
 products.forEach(product => {
