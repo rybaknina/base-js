@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "base-js",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {
     "eslint": "^5.16.0"
   },
