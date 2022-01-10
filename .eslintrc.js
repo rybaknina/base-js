@@ -12,6 +12,9 @@ module.exports = {
         "semi": ["error", "always"],
         "quotes": ["error", "double"],
         "no-console": "off",
+        "no-constant-condition" : 1,
+        "no-undef": 1,
+        "no-unused-vars": 1,
         "no-restricted-syntax": [
             "error",
             {
