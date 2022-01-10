@@ -32,7 +32,7 @@ const products = [
     },
 ];
 
-let result = products.filter(product => product.photos != null && product.photos.length > 0);
+let result = products.filter(product => product.photos !== undefined && product.photos.length > 0);
 console.log(result);
 
 result = products.sort(function(product1, product2) {
