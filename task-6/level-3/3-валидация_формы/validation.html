@@ -41,11 +41,15 @@
         let inputFirst = formEl.querySelector("input#first");
         let inputSecond = formEl.querySelector("input#second");
         formEl.addEventListener("submit", function (event) {
-            if (!inputFirst.value.trim().length) {
+            if (inputFirst.value.trim() === "") {
                 inputFirst.style.borderColor = "red";
+            } else {
+                inputFirst.style.borderColor = "rgb(118, 118, 118)";
             }
-            if (!inputSecond.value.trim().length) {
+            if (inputSecond.value.trim() === "") {
                 inputSecond.style.borderColor = "red";
+            } else {
+                inputSecond.style.borderColor = "rgb(118, 118, 118)";
             }
             event.preventDefault();
         });
