@@ -26,8 +26,7 @@
         "use strict";
         let product = document.querySelector(".product");
         function changeProductContent(event) {
-            event.target.innerHTML = `<div>Другой товар</div>
-                                      <div>Другое описание</div>`;
+            event.target.innerHTML = "<div>Другой товар</div><div>Другое описание</div>";
         }
         product.addEventListener("click", changeProductContent);
     </script>
