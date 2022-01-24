@@ -54,7 +54,7 @@ function setTotalAmountOfProducts() {
 /**
  * Функция перересовывает контент и вызывает расчет суммы товаров в корзине
  */
-function reDrawContent() {
+function reDrawContentInCart() {
     carts.forEach(cart => {
         let productInCart = document.querySelector(`.cart-product-count[data-id="${cart.productId}"]`);
         let amountInCart = document.querySelector(`.cart-product-amount[data-id="${cart.productId}"]`);
@@ -87,7 +87,7 @@ function addToCart(event) {
     } else {
         cart.increaseCountProductInCart();
     }
-    reDrawContent();
+    reDrawContentInCart();
 }
 
 /**
